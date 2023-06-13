@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body class="bg-white text-black">
+    <!-- Header -->
+    <header class="bg-black text-white py-8">
+      <div class="container mx-auto px-4">
+        <nav class="flex md:flex-col">
+          <div class="flex-grow flex flex-row items-center justify-between">
+            <!-- Brand -->
+            <a href="./" class="text-3xl font-semibold font-righteous">RE AI</a>
+            <!-- Button Menu Toggle on Mobile -->
+            <button
+              id="mobile-menu-button"
+              type="button"
+              class="inline-flex md:hidden items-center justify-center btn-icon"
+            >
+              <span class="sr-only">Open main menu</span>
+              <i class="bi bi-list"></i>
+            </button>
+            <!-- Additional -->
+            <div class="hidden md:flex space-x-4">
+              <!-- Wishlist -->
+              <a href="#" class="btn-icon">
+                <i class="bi bi-heart"></i>
+              </a>
+              <!-- Profile -->
+              <a href="#" class="btn-icon">
+                <i class="bi bi-person-circle"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Main Menu -->
+          <div class="hidden md:block">
+            <div class="flex items-baseline justify-center space-x-4">
+              <a
+                href="./"
+                class="text-gray-300 bg-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="./shop.html"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Shop</a
+              >
+              <a
+                href="./about-us.html"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >About Us</a
+              >
+              <a
+                href="./style.html"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Style</a
+              >
+              <a
+                href="./ai-stylist.html"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >AI Stylist</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="./"
+            class="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+            >Home</a
+          >
+          <a
+            href="./shop.html"
+            class="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+            >Shop</a
+          >
+          <a
+            href="./about-us.html"
+            class="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+            >About Us</a
+          >
+          <a
+            href="./style.html"
+            class="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+            >Style</a
+          >
+          <a
+            href="./chomaker"
+            class="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+            >AI Stylist</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-black text-white py-20 md:py-72">
+      <div class="md:max-w-[425px] mx-auto px-4">
+        <div class="text-center">
+          <h1 class="text-8xl font-semibold mb-4 font-righteous">RE AI</h1>
+          <p class="text-lg mb-8">AI가 골라주는 나의 MONTHLY 코디</p>
+          <button
+            role="button"
+            id="quizButton"
+            class="bg-white text-black py-3 px-6 rounded-full font-semibold hover:bg-gray-200"
+          >
+            설문 시작
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="rounded-lg p-6">
+            <h2 class="text-5xl font-semibold mb-4">HOT FASHION ISSUE</h2>
+            <div class="flex items-center justify-between mb-4">
+              <button
+                id="btnHot"
+                class="flex-grow py-4 px-4 border-none activeTab"
+              >
+                Hot Issue
+              </button>
+              <button id="btnTrend" class="flex-grow py-4 px-4 border-none">
+                Trends
+              </button>
+            </div>
+            <span id="hot-issue">
+              <iframe
+                class="w-full aspect-video"
+                src="https://www.youtube.com/embed/K6qa9kHGxoE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </span>
+            <span id="trends" class="hidden">
+              <iframe
+                class="w-full aspect-video"
+                src="https://www.youtube.com/embed/p2BspC8WmDw"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </span>
+          </div>
+          <a href="./style.html" id="shows" class="bg-gray-100 rounded-lg p-6">
+            <h2 class="text-5xl font-semibold mb-4">
+              Show! <br />
+              Your AI Style
+            </h2>
+            <div
+              id="imageSlider"
+              class="mt-4 w-1/2 mx-auto rounded-lg overflow-hidden flex flex-nowrap"
+            >
+              <img
+                src="./public/images/posts/style1.jpeg"
+                id="image1"
+                class="object-cover aspect-photo w-full slider-image active"
+                alt="style photo"
+              />
+              <img
+                src="./public/images/posts/style2.jpeg"
+                id="image2"
+                class="object-cover aspect-photo w-full slider-image"
+                alt="style photo"
+              />
+              <img
+                src="./public/images/posts/style3.jpeg"
+                id="image3"
+                class="object-cover aspect-photo w-full slider-image"
+                alt="style photo"
+              />
+              <img
+                src="./public/images/posts/style4.jpeg"
+                id="image4"
+                class="object-cover aspect-photo w-full slider-image"
+                alt="style photo"
+              />
+              <img
+                src="./public/images/posts/style5.jpeg"
+                id="image5"
+                class="object-cover aspect-photo w-full slider-image"
+                alt="style photo"
+              />
+              <img
+                src="./public/images/posts/style6.jpeg"
+                id="image6"
+                class="object-cover aspect-photo w-full slider-image"
+                alt="style photo"
+              />
+              <img
+                src="./public/images/posts/style7.jpeg"
+                id="image7"
+                class="object-cover aspect-photo w-full slider-image"
+                alt="style photo"
+              />
+              <img
+                src="./public/images/posts/style8.jpeg"
+                id="image8"
+                class="object-cover aspect-photo w-full slider-image"
+                alt="style photo"
+              />
+              <img
+                src="./public/images/posts/style9.jpeg"
+                id="image9"
+                class="object-cover aspect-photo w-full slider-image"
+                alt="style photo"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- information -->
+    <section class="container py-20 mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 px-4 gap-8">
+        <div class="bg-black text-white rounded-lg px-6 py-4">
+          <div class="flex items-center gap-4">
+            <span
+              class="px-4 py-2 bg-white text-gray-800 font-bold text-xl rounded-lg"
+              >1</span
+            >
+            <div class="">
+              <h3 class="font-semibold text-lg">
+                단계 1: 어플리케이션 다운로드 및 가입
+              </h3>
+              <p class="font-medium">
+                빈티지의상의 공유옷장 어플리케이션을 스마트폰에 다운로드하고,
+                간편한 회원가입 절차를 거칩니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-black text-white rounded-lg px-6 py-4">
+          <div class="flex items-center gap-4">
+            <span
+              class="px-4 py-2 bg-white text-gray-800 font-bold text-xl rounded-lg"
+              >2</span
+            >
+            <div class="">
+              <h3 class="font-semibold text-lg">단계 2: 옷장에 아이템 추가</h3>
+              <p class="font-medium">
+                어플리케이션을 실행하여 카메라로 빈티지 의류를 촬영하거나
+                이미지를 업로드하여 개인 옷장에 아이템을 추가합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-black text-white rounded-lg px-6 py-4">
+          <div class="flex items-center gap-4">
+            <span
+              class="px-4 py-2 bg-white text-gray-800 font-bold text-xl rounded-lg"
+              >3</span
+            >
+            <div class="">
+              <h3 class="font-semibold text-lg">단계 3: 아이템 정보 추출</h3>
+              <p class="font-medium">
+                AI 가 업로드한 이미지를 분석하여 아이템의 세부 정보를 추출하고,
+                옷장에 자동으로 저장합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-black text-white rounded-lg px-6 py-4">
+          <div class="flex items-center gap-4">
+            <span
+              class="px-4 py-2 bg-white text-gray-800 font-bold text-xl rounded-lg"
+              >4</span
+            >
+            <div class="">
+              <h3 class="font-semibold text-lg">단계 4: 옷장 관리</h3>
+              <p class="font-medium">
+                개인 옷장에서 아이템을 효과적으로 관리할 수 있습니다. 아이템을
+                분류하고, 태그를 추가하여 원하는 아이템을 쉽게 찾을 수 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-black text-white rounded-lg px-6 py-4">
+          <div class="flex items-center gap-4">
+            <span
+              class="px-4 py-2 bg-white text-gray-800 font-bold text-xl rounded-lg"
+              >5</span
+            >
+            <div class="">
+              <h3 class="font-semibold text-lg">단계 5: AI 코디 아이디어</h3>
+              <p class="font-medium">
+                AI 스타일 어시스턴트는 여러분의 옷장을 분석하고, 유행하는
+                스타일과 트렌드에 기반하여 코디 아이디어를 제공합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-black text-white rounded-lg px-6 py-4">
+          <div class="flex items-center gap-4">
+            <span
+              class="px-4 py-2 bg-white text-gray-800 font-bold text-xl rounded-lg"
+              >6</span
+            >
+            <div class="">
+              <h3 class="font-semibold text-lg">단계 6: 맞춤형 추천</h3>
+              <p class="font-medium">
+                AI 는 여러분의 스타일과 선호도를 파악하여 맞춤형 추천을
+                제공합니다. 개인 취향에 따라 최적의 스타일링을 도와줍니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-black text-white rounded-lg px-6 py-4">
+          <div class="flex items-center gap-4">
+            <span
+              class="px-4 py-2 bg-white text-gray-800 font-bold text-xl rounded-lg"
+              >7</span
+            >
+            <div class="">
+              <h3 class="font-semibold text-lg">
+                단계 7: 빈티지 패션 커뮤니티
+              </h3>
+              <p class="font-medium">
+                어플리케이션은 빈티지 패션 커뮤니티와 연결되어 있습니다. 다른
+                사용자들과 아이디어를 공유하고, 패션 피드를 탐색하며 영감을 얻을
+                수 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-black text-white rounded-lg px-6 py-4">
+          <div class="flex items-center gap-4">
+            <span
+              class="px-4 py-2 bg-white text-gray-800 font-bold text-xl rounded-lg"
+              >8</span
+            >
+            <div class="">
+              <h3 class="font-semibold text-lg">
+                단계 8: 커뮤니티 이벤트 및 교류
+              </h3>
+              <p class="font-medium">
+                커뮤니티 멤버들과 특별 이벤트나 교류를 즐길 수 있습니다. 패션
+                토론, 교환 밋업 등의 다양한 활동에 참여할 수 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-black text-white rounded-lg px-6 py-4">
+          <div class="flex items-center gap-4">
+            <span
+              class="px-4 py-2 bg-white text-gray-800 font-bold text-xl rounded-lg"
+              >9</span
+            >
+            <div class="">
+              <h3 class="font-semibold text-lg">단계 9: 스타일링 공유</h3>
+              <p class="font-medium">
+                여러분이 스타일링한 빈티지 패션을 어플리케이션을 통해 다른
+                사용자들과 공유할 수 있습니다. 독특한 스타일을 자랑하거나
+                피드백을 받을 수 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-black text-white rounded-lg px-6 py-4">
+          <div class="flex items-center gap-4">
+            <span
+              class="px-4 py-2 bg-white text-gray-800 font-bold text-xl rounded-lg"
+              >10</span
+            >
+            <div class="">
+              <h3 class="font-semibold text-lg">단계 10: 계속 발전하는 앱</h3>
+              <p class="font-medium">
+                빈티지의사의 공유옷장 어플리케이션은 지속적인 업데이트와 개선을
+                통해 사용자들의 요구에 부응하며 발전해갑니다. 사용자들의 의견을
+                반영하여 더욱 향상된 경험을 제공합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workflow -->
+    <section class="py-20">
+      <img
+        src="./public/images/Artboard 1 (1).svg"
+        alt="Workflow"
+        class="w-full rounded-lg"
+      />
+    </section>
+
+    <!-- Grid Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold mb-2">Subscribe Now!</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-2">S / S Spring Summer</h3>
+            <div class="py-6 px-8 bg-gray-100">
+              <p class="text-2xl">
+                1 Month
+                <span class="line-through decoration-red-600 decoration-4"
+                  >49.990₩</span
+                >
+              </p>
+              <p class="font-semibold text-7xl text-red-600">20.000₩</p>
+              <p class="text-lg text-red-400">First Month</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-2">F / W Fall Winter</h3>
+            <div class="py-6 px-8 bg-gray-100">
+              <p class="text-2xl">
+                1 Month
+                <span class="line-through decoration-red-600 decoration-4"
+                  >69.900₩</span
+                >
+              </p>
+              <p class="font-semibold text-7xl text-red-600">20.000₩</p>
+              <p class="text-lg text-red-400">First Month</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+      <div class="container mx-auto px-4">
+        <p class="text-center">© 2023 RE AI. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Modal Section -->
+    <div
+      id="quizModal"
+      class="fixed top-0 left-0 right-0 bottom-0 items-center hidden justify-center bg-black bg-opacity-75 z-[9999] px-4"
+    >
+      <div class="bg-white max-w-7xl rounded-lg p-8">
+        <!-- Header -->
+        <div class="bg-white py-4 z-50">
+          <div class="flex items-center justify-end">
+            <button
+              id="closeModal"
+              class="px-4 py-2 bg-transparent rounded hover:bg-gray-700 hover:text-white"
+            >
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="flex flex-wrap items-center gap-4">
+            <div class="flex-shrink-0 basis-40">
+              <img
+                src="./public/images/quiz.jpeg"
+                alt="Quiz photo"
+                class="rounded-lg w-full aspect-square object-cover object-center"
+              />
+            </div>
+            <h2 class="font-semibold text-2xl">
+              Bantulah AI mengenali diri anda!
+            </h2>
+          </div>
+        </div>
+        <!-- Body -->
+        <div class="max-h-[50vh] overflow-y-auto py-12">
+          <div class="flex flex-col gap-8 items-stretch">
+            <div class="flex flex-col gap-2">
+              <h3 class="text-lg">AI 스타일리스트의 도움을 받으시겠습니까?</h3>
+              <label for="no1-1" class="flex items-center gap-4">
+                <input
+                  type="radio"
+                  name="no1"
+                  id="no1-1"
+                  class="w-4 h-4 bg-gray-100 border-gray-300 accent-black"
+                />
+                <span>네, 받겠습니다.</span>
+              </label>
+              <label for="no1-2" class="flex items-center gap-4">
+                <input
+                  type="radio"
+                  name="no1"
+                  id="no1-2"
+                  class="w-4 h-4 bg-gray-100 border-gray-300 accent-black"
+                />
+                <span>아니요, 받지 않겠습니다.</span>
+              </label>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-lg">성별을 선택해주세요.</h3>
+              <label for="no2-1" class="flex items-center gap-4">
+                <input
+                  type="radio"
+                  name="no2"
+                  id="no2-1"
+                  class="w-4 h-4 bg-gray-100 border-gray-300 accent-black"
+                />
+                <span>여성입니다</span>
+              </label>
+              <label for="no2-2" class="flex items-center gap-4">
+                <input
+                  type="radio"
+                  name="no2"
+                  id="no2-2"
+                  class="w-4 h-4 bg-gray-100 border-gray-300 accent-black"
+                />
+                <span>남성입니다</span>
+              </label>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-lg">평소 어떤 스타일의 옷을 좋아하시나요?</h3>
+              <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div>
+                  <input
+                    type="checkbox"
+                    name="no3"
+                    id="no3-1"
+                    class="hidden peer"
+                  />
+                  <label for="no3-1" class="cursor-pointer">Style 1 </label>
+                  <img
+                    src="./public/images/quiz/choose1.jpg"
+                    alt="choosen 1"
+                    class="w-full h-72 rounded-lg object-cover object-center border peer-checked:p-2 peer-checked:border-black"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="no3"
+                    id="no3-2"
+                    class="hidden peer"
+                  />
+                  <label for="no3-2" class="cursor-pointer">Style 2 </label>
+                  <img
+                    src="./public/images/quiz/choose2.png"
+                    alt="choosen 2"
+                    class="w-full h-72 rounded-lg object-cover object-center border peer-checked:p-2 peer-checked:border-black"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="no3"
+                    id="no3-3"
+                    class="hidden peer"
+                  />
+                  <label for="no3-3" class="cursor-pointer">Style 3 </label>
+                  <img
+                    src="./public/images/quiz/choose3.png"
+                    alt="choosen 3"
+                    class="w-full h-72 rounded-lg object-cover object-center border peer-checked:p-2 peer-checked:border-black"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="no3"
+                    id="no3-4"
+                    class="hidden peer"
+                  />
+                  <label for="no3-4" class="cursor-pointer">Style 4 </label>
+                  <img
+                    src="./public/images/quiz/choose4.jpg"
+                    alt="choosen 4"
+                    class="w-full h-72 rounded-lg object-cover object-center border peer-checked:p-2 peer-checked:border-black"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="no3"
+                    id="no3-5"
+                    class="hidden peer"
+                  />
+                  <label for="no3-5" class="cursor-pointer">Style 5 </label>
+                  <img
+                    src="./public/images/quiz/choose5.jpg"
+                    alt="choosen 5"
+                    class="w-full h-72 rounded-lg object-cover object-center border peer-checked:p-2 peer-checked:border-black"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="no3"
+                    id="no3-6"
+                    class="hidden peer"
+                  />
+                  <label for="no3-6" class="cursor-pointer">Style 6 </label>
+                  <img
+                    src="./public/images/quiz/choose6.jpg"
+                    alt="choosen 6"
+                    class="w-full h-72 rounded-lg object-cover object-center border peer-checked:p-2 peer-checked:border-black"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex items-center justify-end py-4">
+          <a
+            href="./ai-stylist.html"
+            class="px-6 py-2 bg-black text-white hover:bg-gray-700 rounded-full flex items-center gap-2"
+            >Continue <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./public/js/script.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        const modal = $("#quizModal");
+        const quizButton = $("#quizButton");
+        const closeModalButton = $("#closeModal");
+
+        // Tampilkan modal saat tombol "Buka Modal" diklik
+        quizButton.click(function () {
+          modal.css("display", "flex");
+        });
+
+        // Sembunyikan modal saat tombol "Tutup" diklik
+        closeModalButton.click(function () {
+          modal.hide();
+        });
+
+        const btnHot = $("#btnHot");
+        const btnTrend = $("#btnTrend");
+        const hot = $("#hot-issue");
+        const trend = $("#trends");
+
+        btnHot.click(() => {
+          btnTrend.removeClass("activeTab");
+          btnHot.addClass("activeTab");
+          hot.show();
+          trend.hide();
+        });
+        btnTrend.click(() => {
+          btnHot.removeClass("activeTab");
+          btnTrend.addClass("activeTab");
+          trend.show();
+          hot.hide();
+        });
+
+        const images = [
+          "#image1",
+          "#image2",
+          "#image3",
+          "#image4",
+          "#image5",
+          "#image6",
+          "#image7",
+          "#image8",
+          "#image9",
+        ];
+        let currentIndex = 0;
+
+        function showNextImage() {
+          $(images[currentIndex]).fadeOut(500, function () {
+            currentIndex = (currentIndex + 1) % images.length;
+            $(images[currentIndex]).fadeIn(500);
+          });
+        }
+
+        setInterval(() => {
+          showNextImage();
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>

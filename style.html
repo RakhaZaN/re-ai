@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body class="bg-white text-black">
+    <!-- Header -->
+    <header class="bg-black text-white py-8">
+      <div class="container mx-auto px-4">
+        <nav class="flex md:flex-col">
+          <div class="flex-grow flex flex-row items-center justify-between">
+            <!-- Brand -->
+            <a href="./" class="text-3xl font-semibold font-righteous">RE AI</a>
+            <!-- Button Menu Toggle on Mobile -->
+            <button
+              id="mobile-menu-button"
+              type="button"
+              class="inline-flex md:hidden items-center justify-center btn-icon"
+            >
+              <span class="sr-only">Open main menu</span>
+              <i class="bi bi-list"></i>
+            </button>
+            <!-- Additional -->
+            <div class="hidden md:flex space-x-4">
+              <!-- Wishlist -->
+              <a href="#" class="btn-icon">
+                <i class="bi bi-heart"></i>
+              </a>
+              <!-- Profile -->
+              <a href="#" class="btn-icon">
+                <i class="bi bi-person-circle"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Main Menu -->
+          <div class="hidden md:block">
+            <div class="flex items-baseline justify-center space-x-4">
+              <a
+                href="./"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="./shop.html"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Shop</a
+              >
+              <a
+                href="./about-us.html"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >About Us</a
+              >
+              <a
+                href="./style.html"
+                class="text-gray-300 bg-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Style</a
+              >
+              <a
+                href="./ai-stylist.html"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >AI Stylist</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="./"
+            class="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+            >Home</a
+          >
+          <a
+            href="./shop.html"
+            class="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+            >Shop</a
+          >
+          <a
+            href="./about-us.html"
+            class="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+            >About Us</a
+          >
+          <a
+            href="./style.html"
+            class="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+            >Style</a
+          >
+          <a
+            href="./chomaker"
+            class="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+            >AI Stylist</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-black text-white py-12">
+      <div class="md:max-w-[425px] mx-auto px-4">
+        <div class="text-center">
+          <h1 class="text-2xl mb-4 font-righteous">Exploring World Style</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore -->
+    <section class="bg-white py-16">
+      <div class="container mx-auto px-4">
+        <div class="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+          <div
+            class="rounded-lg flex flex-col cursor-pointer post"
+            data-img-src="./public/images/posts/style1.jpeg"
+            data-like="129K"
+          >
+            <div class="w-full h-auto aspect-photo rounded-lg overflow-hidden">
+              <img
+                src="./public/images/posts/style1.jpeg"
+                alt="user_name"
+                class="object-cover object-center w-full h-full"
+              />
+            </div>
+            <div class="mt-2 flex items-start justify-between">
+              <h3 class="font-medium text-gray-800">USER_NAME</h3>
+              <span class="flex-shrink-0 flex gap-2 text-gray-700">
+                <i class="bi bi-heart"></i> 129K
+              </span>
+            </div>
+          </div>
+          <div
+            class="rounded-lg flex flex-col cursor-pointer post"
+            data-img-src="./public/images/posts/style2.jpeg"
+            data-like="438K"
+          >
+            <div class="w-full h-auto aspect-photo rounded-lg overflow-hidden">
+              <img
+                src="./public/images/posts/style2.jpeg"
+                alt="user_name"
+                class="object-cover object-center w-full h-full"
+              />
+            </div>
+            <div class="mt-2 flex items-start justify-between">
+              <h3 class="font-medium text-gray-800">USER_NAME</h3>
+              <span class="flex-shrink-0 flex gap-2 text-gray-700">
+                <i class="bi bi-heart"></i> 438K
+              </span>
+            </div>
+          </div>
+          <div
+            class="rounded-lg flex flex-col cursor-pointer post"
+            data-img-src="./public/images/posts/style3.jpeg"
+            data-like="34K"
+          >
+            <div class="w-full h-auto aspect-photo rounded-lg overflow-hidden">
+              <img
+                src="./public/images/posts/style3.jpeg"
+                alt="user_name"
+                class="object-cover object-center w-full h-full"
+              />
+            </div>
+            <div class="mt-2 flex items-start justify-between">
+              <h3 class="font-medium text-gray-800">USER_NAME</h3>
+              <span class="flex-shrink-0 flex gap-2 text-gray-700">
+                <i class="bi bi-heart"></i> 34K
+              </span>
+            </div>
+          </div>
+          <div
+            class="rounded-lg flex flex-col cursor-pointer post"
+            data-img-src="./public/images/posts/style4.jpeg"
+            data-like="1.24K"
+          >
+            <div class="w-full h-auto aspect-photo rounded-lg overflow-hidden">
+              <img
+                src="./public/images/posts/style4.jpeg"
+                alt="user_name"
+                class="object-cover object-center w-full h-full"
+              />
+            </div>
+            <div class="mt-2 flex items-start justify-between">
+              <h3 class="font-medium text-gray-800">USER_NAME</h3>
+              <span class="flex-shrink-0 flex gap-2 text-gray-700">
+                <i class="bi bi-heart"></i> 1.24K
+              </span>
+            </div>
+          </div>
+          <div
+            class="rounded-lg flex flex-col cursor-pointer post"
+            data-img-src="./public/images/posts/style5.jpeg"
+            data-like="88K"
+          >
+            <div class="w-full h-auto aspect-photo rounded-lg overflow-hidden">
+              <img
+                src="./public/images/posts/style5.jpeg"
+                alt="user_name"
+                class="object-cover object-center w-full h-full"
+              />
+            </div>
+            <div class="mt-2 flex items-start justify-between">
+              <h3 class="font-medium text-gray-800">USER_NAME</h3>
+              <span class="flex-shrink-0 flex gap-2 text-gray-700">
+                <i class="bi bi-heart"></i> 88K
+              </span>
+            </div>
+          </div>
+          <div
+            class="rounded-lg flex flex-col cursor-pointer post"
+            data-img-src="./public/images/posts/style6.jpeg"
+            data-like="347K"
+          >
+            <div class="w-full h-auto aspect-photo rounded-lg overflow-hidden">
+              <img
+                src="./public/images/posts/style6.jpeg"
+                alt="user_name"
+                class="object-cover object-center w-full h-full"
+              />
+            </div>
+            <div class="mt-2 flex items-start justify-between">
+              <h3 class="font-medium text-gray-800">USER_NAME</h3>
+              <span class="flex-shrink-0 flex gap-2 text-gray-700">
+                <i class="bi bi-heart"></i> 347K
+              </span>
+            </div>
+          </div>
+          <div
+            class="rounded-lg flex flex-col cursor-pointer post"
+            data-img-src="./public/images/posts/style7.jpeg"
+            data-like="100"
+          >
+            <div class="w-full h-auto aspect-photo rounded-lg overflow-hidden">
+              <img
+                src="./public/images/posts/style7.jpeg"
+                alt="user_name"
+                class="object-cover object-center w-full h-full"
+              />
+            </div>
+            <div class="mt-2 flex items-start justify-between">
+              <h3 class="font-medium text-gray-800">USER_NAME</h3>
+              <span class="flex-shrink-0 flex gap-2 text-gray-700">
+                <i class="bi bi-heart"></i> 100
+              </span>
+            </div>
+          </div>
+          <div
+            class="rounded-lg flex flex-col cursor-pointer post"
+            data-img-src="./public/images/posts/style8.jpeg"
+            data-like="999K"
+          >
+            <div class="w-full h-auto aspect-photo rounded-lg overflow-hidden">
+              <img
+                src="./public/images/posts/style8.jpeg"
+                alt="user_name"
+                class="object-cover object-center w-full h-full"
+              />
+            </div>
+            <div class="mt-2 flex items-start justify-between">
+              <h3 class="font-medium text-gray-800">USER_NAME</h3>
+              <span class="flex-shrink-0 flex gap-2 text-gray-700">
+                <i class="bi bi-heart"></i> 999K
+              </span>
+            </div>
+          </div>
+          <div
+            class="rounded-lg flex flex-col cursor-pointer post"
+            data-img-src="./public/images/posts/style9.jpeg"
+            data-like="234M"
+          >
+            <div class="w-full h-auto aspect-photo rounded-lg overflow-hidden">
+              <img
+                src="./public/images/posts/style9.jpeg"
+                alt="user_name"
+                class="object-cover object-center w-full h-full"
+              />
+            </div>
+            <div class="mt-2 flex items-start justify-between">
+              <h3 class="font-medium text-gray-800">USER_NAME</h3>
+              <span class="flex-shrink-0 flex gap-2 text-gray-700">
+                <i class="bi bi-heart"></i> 234M
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Section -->
+    <div
+      id="postModal"
+      class="fixed top-0 left-0 right-0 bottom-0 items-center hidden justify-center bg-black bg-opacity-75 z-[9999] px-4"
+    >
+      <div
+        class="bg-white rounded-lg flex flex-col max-w-5xl max-h-[90vh] py-4 gap-2"
+      >
+        <!-- Header -->
+        <div class="px-4 flex justify-end">
+          <button
+            id="closeModal"
+            class="py-2 px-3 bg-transparent border-none outline-none"
+          >
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+        <!-- image -->
+        <div class="flex-grow flex md:hidden items-center justify-center">
+          <img
+            src=""
+            alt="post"
+            id="img-show-sm"
+            class="object-cover h-full w-full"
+          />
+        </div>
+        <!-- text -->
+        <div class="flex-grow md:hidden overflow-y-auto max-h-full m-4">
+          <h4 class="font-medium">USER_NAME</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum est
+            eveniet provident natus adipisci autem odit excepturi id ipsam cum!
+          </p>
+          <p class="text-sm font-medium"><span id="like-sm"></span> Likes</p>
+          <hr class="mt-8 mb-4 border-gray-300" />
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between">
+              <span class="flex-grow">
+                <h5 class="font-medium">NETIZEN</h5>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Molestiae suscipit autem, quasi quod ratione corrupti?
+                </p>
+              </span>
+              <span class="py-2 px-3">
+                <i class="bi bi-heart"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- footer -->
+        <div class="flex md:hidden items-center justify-between gap-2 px-4">
+          <input
+            type="text"
+            class="p-2 border border-gray-300 rounded-lg flex-grow"
+            placeholder="Masukkan teks"
+          />
+          <button
+            class="px-3 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-500"
+          >
+            <i class="bi bi-send"></i>
+          </button>
+        </div>
+        <div
+          class="hidden md:flex flex-col md:flex-row justify-between max-h-full gap-2"
+        >
+          <!-- image -->
+          <div class="flex-grow flex items-center justify-center">
+            <img
+              src=""
+              alt="post"
+              id="img-show"
+              class="object-cover h-full w-full"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <!-- text -->
+            <div class="flex-grow overflow-y-auto max-h-full m-4">
+              <h4 class="font-medium">USER_NAME</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                est eveniet provident natus adipisci autem odit excepturi id
+                ipsam cum!
+              </p>
+              <p class="text-sm font-medium"><span id="like"></span> Likes</p>
+              <hr class="mt-8 mb-4 border-gray-300" />
+              <div class="flex flex-col gap-2">
+                <div class="flex items-center justify-between">
+                  <span class="flex-grow">
+                    <h5 class="font-medium">NETIZEN</h5>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Molestiae suscipit autem, quasi quod ratione corrupti?
+                    </p>
+                  </span>
+                  <span class="py-2 px-3">
+                    <i class="bi bi-heart"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- footer -->
+            <div class="flex items-center justify-between gap-2 px-4">
+              <input
+                type="text"
+                class="p-2 border border-gray-300 rounded-lg flex-grow"
+                placeholder="Masukkan teks"
+              />
+              <button
+                class="px-3 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-500"
+              >
+                <i class="bi bi-send"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+      <div class="container mx-auto px-4">
+        <p class="text-center">© 2023 Sewa Baju. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./public/js/script.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        const modal = $("#postModal");
+        const posts = $(".post");
+        const closeModalButton = $("#closeModal");
+
+        // Tampilkan modal saat tombol "Buka Modal" diklik
+        posts.click(function () {
+          $(this).each(() => {
+            const imgUrl = $(this).attr("data-img-src");
+            const like = $(this).attr("data-like");
+
+            $("#img-show-sm").attr("src", imgUrl);
+            $("#like-sm").html(like);
+            $("#img-show").attr("src", imgUrl);
+            $("#like").html(like);
+
+            modal.css("display", "flex");
+          });
+        });
+
+        // Sembunyikan modal saat tombol "Tutup" diklik
+        closeModalButton.click(function () {
+          modal.hide();
+        });
+      });
+    </script>
+  </body>
+</html>
